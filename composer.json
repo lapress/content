@@ -1,0 +1,28 @@
+{
+    "name": "lapress/content",
+    "description": "Content parser",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Szczepanski",
+            "email": "sebastian@ably.pl"
+        }
+    ],
+        "autoload": {
+        "psr-4": {
+            "LaPress\\Content\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "thunderer/shortcode": "^0.7.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaPress\\Content\\ContentServiceProvider"
+            ]
+        }
+    }
+}
