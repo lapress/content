@@ -12,6 +12,6 @@ class EmbedShortcode implements Shortcode
 {
     public function __invoke(ShortcodeInterface $shortcode): string
     {
-
+            dump('jestem');die();
     }
 }

@@ -8,5 +8,8 @@ namespace LaPress\Content\Providers;
  */
 class TwitterProvider
 {
+    public static function parse($content)
+    {
 
+    }
 }
