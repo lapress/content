@@ -6,10 +6,10 @@ namespace LaPress\Content\Providers;
  * @author    Sebastian Szczepański
  * @copyright ably
  */
-class TwitterProvider extends AbstractProvider implements Provider
+class VimeoProvider extends AbstractProvider implements Provider
 {
-    const PATTERN = '/^(https?:\/\/)?(www\.)?twitter.com\//';
-    const PATTERN_ID = '/.*?(\\d+)/';
+    const PATTERN = '#^https?://(.+\.)?vimeo\.com/.*#';
+    const PATTERN_ID = '/(http|https)?:\/\/(www\.)?vimeo.com\/(?:channels\/(?:\w+\/)?|groups\/([^\/]*)\/videos\/|)(\d+)(?:|\/\?)/';
 
     /**
      * @param string $url
@@ -23,6 +23,6 @@ class TwitterProvider extends AbstractProvider implements Provider
             return $url;
         }
 
-        return static::getTemplate('twitter', ['id' => $id ]);
+        return static::getTemplate('vimeo', ['id' => $id ]);
     }
 }

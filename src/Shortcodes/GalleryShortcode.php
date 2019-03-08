@@ -12,6 +12,8 @@ class GalleryShortcode implements Shortcode
 {
     public function __invoke(ShortcodeInterface $shortcode): string
     {
-        $shortcode->getContent();
+        return '';
+        return $shortcode->getContent();
+
     }
 }
