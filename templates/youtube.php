@@ -1,1 +1,3 @@
-<youtube video-id="<?=$id?>"></youtube>
+<div class="embed">
+  <youtube video-id="<?=$id?>"></youtube>
+</div>
